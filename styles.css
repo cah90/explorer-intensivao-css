@@ -1,0 +1,273 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	font-size: 62.5%;
+	--fc-heading: #b52184;
+	--fc-body: #312d64;
+}
+
+body {
+	font-size: 1.6rem;
+	font-family: "Mulish", sans-serif;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+
+	height: 100vh;
+}
+
+.header__img {
+	width: 364px;
+	margin-bottom: 1.7rem;
+}
+
+.hero {
+	text-align: center;
+}
+
+.hero p {
+	margin-bottom: 3.5rem;
+}
+
+.hero img {
+	margin-bottom: 9.3rem;
+	cursor: pointer;
+	animation: arrow 3s ease normal forwards infinite;
+}
+
+.hero img:hover {
+	animation: none;
+}
+
+@keyframes arrow {
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+
+	10%,
+	30%,
+	50%,
+	70% {
+		transform: translateY(-8px);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: translateY(8px);
+	}
+
+	80% {
+		transform: translateY(6.4px);
+	}
+
+	90% {
+		transform: translateY(-6.4px);
+	}
+}
+
+h1 {
+	color: var(--fc-heading);
+	font-weight: 900;
+	font-size: 3.2rem;
+	line-height: 4rem;
+}
+
+p {
+	color: var(--fc-body);
+	font-weight: 600;
+	font-size: 2rem;
+	line-height: 2.5rem;
+}
+
+.cards {
+	background: linear-gradient(96.21deg, #343193 0%, #302c63 99.68%);
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 4.9rem;
+	padding: 5.2rem 0;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+
+	width: 35.3rem;
+
+	padding: 2.6rem;
+	background-color: #fff;
+	box-shadow: 0px 3.31077px 13.2431px rgba(0, 0, 0, 0.25);
+	border-radius: 2rem;
+}
+
+.card__info {
+	width: 26.6rem;
+}
+
+.card img {
+	width: 80px;
+	margin-bottom: 3.3rem;
+}
+
+.card p {
+	font-size: 1.6rem;
+	line-height: 2rem;
+
+	margin-top: 1rem;
+}
+
+.contact {
+	width: 34.8rem;
+	margin: 7.8rem auto 6.5rem;
+}
+
+.contact h1 {
+	margin-bottom: 4.3rem;
+}
+
+.contact__img {
+	display: none;
+}
+
+fieldset,
+input,
+textarea {
+	border: none;
+}
+
+.form__field {
+	border: 1.5px solid var(--fc-body);
+	border-radius: 1.6rem;
+
+	padding: 1.2rem 1.6rem;
+	margin-bottom: 2.4rem;
+
+	display: flex;
+	align-items: flex-end;
+}
+
+.form__field svg {
+	margin-right: 1.2rem;
+}
+
+.form__field input,
+.form__field textarea {
+	color: var(--fc-body);
+	font-size: 1.6rem;
+
+	outline: none;
+}
+
+.form__field textarea {
+	resize: none;
+
+	font-family: "Mulish";
+	text-align: left;
+	height: 12.6rem;
+	width: 100%;
+}
+
+.form__field input::placeholder,
+.form__field textarea::placeholder {
+	color: var(--fc-body);
+	font-size: 1.6rem;
+}
+
+.contact button {
+	background: linear-gradient(96.21deg, #343193 0%, #302c63 99.68%);
+
+	color: #fff;
+	font-weight: 700;
+	font-size: 1.4rem;
+	line-height: 2.4rem;
+
+	padding: 1rem 1.6rem;
+	border-radius: 1.6rem;
+	border: none;
+}
+
+footer {
+	background: linear-gradient(96.21deg, #343193 0%, #302c63 99.68%);
+}
+
+footer p {
+	color: #fff;
+
+	font-size: 2rem;
+	line-height: 2.4rem;
+	font-weight: 600;
+	text-align: center;
+
+	padding: 3.2rem 1.6rem;
+}
+
+@media (min-width: 1024px) {
+}
+
+@media (min-width: 1330px) {
+	header {
+		flex-direction: row-reverse;
+		align-items: start;
+	}
+
+	.header__img {
+		width: 71.9rem;
+		padding-right: 3rem;
+	}
+
+	.hero {
+		margin-top: 24.2rem;
+		margin-right: 2.8rem;
+		text-align: left;
+	}
+
+	.hero img {
+		margin-top: 10.9rem;
+	}
+
+	.hero h1 {
+		font-weight: 900;
+		font-size: 5.8rem;
+		line-height: 7.3rem;
+	}
+
+	.hero p {
+		font-weight: 600;
+		font-size: 3.2rem;
+		line-height: 4rem;
+	}
+
+	.cards {
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.contact-page {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.contact__img {
+		display: initial;
+	}
+
+	.contact {
+		width: 59.5rem;
+	}
+
+	.contact button {
+		cursor: pointer;
+	}
+}
